@@ -5,7 +5,7 @@ const chineses = f => f.pais === 'China' // referenciar para filter
 const mulheres = f => f.genero === 'F' //referenciar para filter
 const menorSalario = (funci, funcAtual) => {
   //referenciar para reduce
-  return funci.salario < funcAtual.salario ? funci : funcAtual
+  return funci.salario > funcAtual.salario ? funci : funcAtual
 }
 
 axios.get(url).then(response => {
